@@ -1,0 +1,24 @@
+{
+  "Api": {
+    "baseUrl":""
+  },
+  "AWS": {
+    "config": {
+      "region": "us-east-1",
+      "loginUrl": "s9.stg.phriendlyphishing.com",
+      "poolId": "us-east-1:c4d80404-8617-445a-9b32-456156892eb4",
+      "tableName": "Users"
+    }
+  },
+  "Build":{
+    "version": "__build_version__"
+  },
+  "OAuth2":{
+    "authorizationUrl": "http://localhost:3000/oauth/authorize",
+    "clientId": "Iizg-QtZnUEuqkq8hziKmN5FQlRV6a94xgWjHhas2FA",
+    "redirectUri": "http://localhost:3001/callback"
+  },
+  "Google": {
+    "apiKey": ""
+  }
+}

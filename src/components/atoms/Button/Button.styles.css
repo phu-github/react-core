@@ -1,0 +1,71 @@
+/* default */
+.atom-button{
+  width: auto;
+  height: auto;
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  border: 1px solid black;
+  border-radius: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.atom-button.active{
+    background: #e8f2ff !important;
+}
+/* end default */
+
+/* btn icon text */
+.btn-icon-text {
+    width: 232px;
+    height: 38px;
+    padding: 0px 24px 0px 45px;
+    background-color: #fff;
+    border: 1px solid #e0f3ff;
+    border-radius: 4px;
+    margin-bottom: 2px;
+}
+
+.btn-icon-text:hover {
+  background: #e7eaf3!important;
+}
+
+.btn-icon-text:hover .text-style {
+  color : Black !important;
+}
+/* end btn icon text */
+
+/* only-icon */
+.btn-icon {
+  text-align: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  padding: 16px 9px;
+  margin: 0;
+  background-color: #e7eaf3;
+}
+
+.atom-button.btn-icon .image-style {
+  margin: 0!important;
+}
+
+/* btn-search */
+.btn-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    background-color: 'rgba(0,0,0,.06)';
+    border: 1px solid #e9ecef;
+    border-radius: 50%;
+}
+/* btn-mail */
+.btn-mail, .btn-notify{
+    width: 24px;
+    height: auto;
+    background-color: 'rgba(0,0,0,.06)';
+    border: '1px solid #e9ecef';
+}

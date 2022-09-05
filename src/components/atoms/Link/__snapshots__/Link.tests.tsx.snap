@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link component tests Should render correctly with default props 1`] = `
+<a
+  className="link-style"
+  href="http://www.google.com"
+  style={
+    Object {
+      "color": "#007FA1",
+      "fontSize": undefined,
+    }
+  }
+>
+  Session start
+  Test Link
+</a>
+`;

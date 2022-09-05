@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Image component tests Should render correctly with default props 1`] = `
+<img
+  className="image-style"
+  src={
+    Object {
+      "ReactComponent": [Function],
+      "default": [Function],
+    }
+  }
+  style={
+    Object {
+      "backgroundColor": "tranparent",
+      "border": 0,
+      "borderRadius": "0px",
+      "height": "auto",
+      "margin": "0px",
+      "width": "200px",
+    }
+  }
+/>
+`;

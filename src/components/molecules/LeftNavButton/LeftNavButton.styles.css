@@ -1,0 +1,27 @@
+.m-navigation {
+    width: 280px;
+    height: 100vh;
+    background: #e7eaf3;
+    padding: 0;
+}
+
+.m-navigation.fixed {
+    position: fixed;
+    width: 280px;
+    /* top: 58px; */
+    left: 0;
+}
+
+.btn-icon-text {
+    width: 232px;
+    height: 38px;
+    padding: 0px 24px 0px 45px;
+    background-color: #fff;
+    border: 1px solid #e0f3ff;
+    border-radius: 4px;
+    margin-bottom: 2px;
+}
+
+.right-content {
+    padding-left: 216px;
+}
