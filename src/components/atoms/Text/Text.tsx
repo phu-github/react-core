@@ -3,11 +3,11 @@ import {TextProps} from './Text.props';
 import './Text.styles.css';
 
 export const Text: React.FC<TextProps> = ({
-    varient = '',
+    variant = '',
     children,
 }) => {
   return (
-    <p className={`atom-text ${varient}`}>
+    <p className={`atom-text ${variant}`}>
         {children}
     </p>
   );

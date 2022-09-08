@@ -10,16 +10,15 @@ export const Button: React.FC<ButtonProps> = ({
     linkIcon,
     isActive,
     onClick,
-    imageWidth = '22px',
-    imageHeight = '22px',
-    ...rest
+    txtVariant,
+    imgVariant,
 }) => {
     return (
         <button 
             onClick={onClick} 
-            className={`atom-button ${variant} ${isActive? 'active': ''} `} {...rest} >
-            {linkIcon && <Image width={imageWidth} height={imageHeight} margin= "0 0 0 0" srcImg={linkIcon} />}
-            {title && <Text children={title} fontSize={14} fontWeight={300} margin= "0 10px" color="#1a1a1a" />}
+            className={`atom-button ${variant} ${isActive? 'active': ''} `} >
+            {linkIcon && <Image variant={imgVariant} srcImg={linkIcon} />}
+            {title && <Text variant={txtVariant} children={title} />}
         </button>
     );
 };

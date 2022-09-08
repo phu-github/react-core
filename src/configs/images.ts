@@ -12,6 +12,7 @@ import Book from '../assets/images/book.svg';
 import Grade from '../assets/images/grade.svg';
 import MessageIcon from '../assets/images/msg.svg';
 import MailIcon from '../assets/images/email.svg';
+import BellIcon from '../assets/images/bell.svg';
 
 export const Images = {
   PH2Logo,
@@ -28,4 +29,5 @@ export const Images = {
   Grade,
   MessageIcon,
   MailIcon,
+  BellIcon
 }

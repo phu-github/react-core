@@ -6,7 +6,7 @@
   padding: 0;
   margin: 0;
   border: 1px solid black;
-  border-radius: none;
+  border-radius: unset;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -20,7 +20,7 @@
 .btn-icon-text {
     width: 232px;
     height: 38px;
-    padding: 0px 24px 0px 45px;
+    padding: 0 0 0 10px;
     background-color: #fff;
     border: 1px solid #e0f3ff;
     border-radius: 4px;
@@ -28,11 +28,15 @@
 }
 
 .btn-icon-text:hover {
-  background: #e7eaf3!important;
+  background: #e7eaf3;
 }
 
 .btn-icon-text:hover .text-style {
-  color : Black !important;
+  color : Black;
+}
+
+.img-icon-text{
+    margin-right: 10px;
 }
 /* end btn icon text */
 
@@ -58,14 +62,24 @@
     align-items: center;
     width: 42px;
     height: 42px;
-    background-color: 'rgba(0,0,0,.06)';
+    background-color: rgba(0,0,0,.06);
     border: 1px solid #e9ecef;
     border-radius: 50%;
 }
-/* btn-mail */
-.btn-mail, .btn-notify{
-    width: 24px;
-    height: auto;
-    background-color: 'rgba(0,0,0,.06)';
-    border: '1px solid #e9ecef';
+
+/* btn-message */
+.btn-message, .btn-bell-notify{
+    border: unset;
+}
+.txt-message{
+    position: relative;
+    right: 12px;
+    top: -12px;
+    line-height: 24px;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    background: #f64e60;
+    color: #fff;
+    font-size: 11px
 }

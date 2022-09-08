@@ -6,7 +6,6 @@ export interface ButtonProps {
     linkIcon?:string;
     title?: string;
     onClick?: () => void;
-    imageWidth?: string | number;
-    imageHeight?: string | number;
-    textVariant?: string;
+    txtVariant?: string;
+    imgVariant?: string;
 }

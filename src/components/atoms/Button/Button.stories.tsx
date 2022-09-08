@@ -15,22 +15,23 @@ export default {
 
 const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />
 
-export const ButtonIcon = Template.bind({});
-ButtonIcon.args = {
+export const ButtonIconDefault = Template.bind({});
+ButtonIconDefault.args = {
   variant: 'btn-icon',
   linkIcon: Images.SearchIcon,
   title: "",
   onClick: action('on-click'),
+  imgVariant: 'img-icon'
 };
 
-export const ButtonIconText = Template.bind({});
-ButtonIconText.args = {
+export const ButtonIconTextDefault = Template.bind({});
+ButtonIconTextDefault.args = {
     variant: 'btn-icon-text',
     linkIcon: Images.DashboardIcon,
-    title: "Dashboard AI-TOEIC",
+    title: "Dashboard",
     onClick: action('on-click'),
-    imageWidth: '22px',
-    imageHeight: '22px'
+    txtVariant: 'txt-icon-text',
+    imgVariant: 'img-icon-text'
 };
 
 export const ButtonSearch = Template.bind({});
@@ -39,28 +40,25 @@ ButtonSearch.args = {
   linkIcon: Images.SearchIcon,
   title: "",
   onClick: action('on-click'),
-  imageWidth: '22px',
-  imageHeight: '22px'
+  imgVariant: 'img-search'
 };
 
 export const MailBox = Template.bind({});
 MailBox.args = {
-  variant: 'btn-mail',
-  linkIcon: Images.MailIcon,
+  variant: 'btn-message',
+  linkIcon: Images.MessageIcon,
   title: "0",
   onClick: action('on-click'),
-  imageWidth: '24px',
-  imageHeight: '24px',
-  textVariant: 'txt-mail'
+  txtVariant: 'txt-message',
+  imgVariant: 'img-message'
 };
 
 export const NotificationBox = Template.bind({});
 NotificationBox.args = {
-  variant: 'btn-notify',
-  linkIcon: Images.MessageIcon,
+  variant: 'btn-bell-notify',
+  linkIcon: Images.BellIcon,
   title: "0",
   onClick: action('on-click'),
-  imageWidth: '24px',
-  imageHeight: '24px',
-  textVariant: 'txt-notify',
+  txtVariant: 'txt-bell-notify',
+  imgVariant: 'img-bell-notify',
 };
