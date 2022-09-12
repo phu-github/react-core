@@ -15,7 +15,7 @@ const Template: ComponentStory<typeof Link> = (args) => <Link {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-    variant: 'link-default',
+    variant: 'link-email',
     children: 'darlene.robertson@gmail.com',
     url: 'http://www.google.com'
 };

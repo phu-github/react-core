@@ -1,18 +1,16 @@
-.m-navigation {
+.m-sidebar {
     width: 280px;
-    height: 100vh;
     background: #e7eaf3;
     padding: 0;
 }
 
-.m-navigation.fixed {
+.m-sidebar.fixed {
     position: fixed;
     width: 280px;
     /* top: 58px; */
     left: 0;
 }
 
-.right-content {
-    padding-left: 216px;
+.sub-item{
+    color: black;
 }
-

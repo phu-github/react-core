@@ -1,13 +1,13 @@
 // import React, { useState } from 'react';
-// import {LeftNavButtonProps} from './LeftNavButton.props';
-// import './LeftNavButton.styles.css';
+// import {SideBarProps} from './SideBar.props';
+// import './SideBar.styles.scss';
 // import {Button} from "../../atoms/Button";
 
-// interface LeftNavButton {
+// interface SideBar {
 //   id?: number; name?: string; linkIcon?: string; activeObject?: string;
 // }
 
-// export const LeftNavButton: React.FC<LeftNavButtonProps> = ({
+// export const SideBar: React.FC<SideBarProps> = ({
 //     leftNavBtnArr=[],
 // }) => {
 

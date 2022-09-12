@@ -11,7 +11,7 @@ export const SearchBar: React.FC<SearchBarProps> = ({
     <div className="m-search-bar">
         <Input variant='input-search' backgroundColor='transparent' border='none' />
         <Button 
-            variant = "btn-search" 
+            variant = "btn-search"
             linkIcon = {mLinkIcon} 
         />
     </div>

@@ -15,8 +15,8 @@ export default {
 
 const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />
 
-export const ButtonIconDefault = Template.bind({});
-ButtonIconDefault.args = {
+export const _1OnlyIcon = Template.bind({});
+_1OnlyIcon.args = {
   variant: 'btn-icon',
   linkIcon: Images.SearchIcon,
   title: "",
@@ -24,8 +24,8 @@ ButtonIconDefault.args = {
   imgVariant: 'img-icon'
 };
 
-export const ButtonIconTextDefault = Template.bind({});
-ButtonIconTextDefault.args = {
+export const _2IconWITHText = Template.bind({});
+_2IconWITHText.args = {
     variant: 'btn-icon-text',
     linkIcon: Images.DashboardIcon,
     title: "Dashboard",
@@ -34,8 +34,23 @@ ButtonIconTextDefault.args = {
     imgVariant: 'img-icon-text'
 };
 
-export const ButtonSearch = Template.bind({});
-ButtonSearch.args = {
+export const _3IconWITHTextANDIcon = Template.bind({});
+_3IconWITHTextANDIcon.args = {
+  variant: 'btn-sidebar',
+  title: "Dashboard",
+  onClick: action('on-click'),
+  // Text
+  txtVariant: 'txt-xxx',
+  //image 1
+  linkIcon: Images.DashboardIcon,
+  imgVariant: 'img-dashboard',
+  //image 2
+  linkIconPlus: Images.RightIcon,
+  imgVariantPlus: 'img-arrow'
+};
+
+export const Search = Template.bind({});
+Search.args = {
   variant: 'btn-search',
   linkIcon: Images.SearchIcon,
   title: "",

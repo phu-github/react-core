@@ -13,21 +13,13 @@ import Grade from '../assets/images/grade.svg';
 import MessageIcon from '../assets/images/msg.svg';
 import MailIcon from '../assets/images/email.svg';
 import BellIcon from '../assets/images/bell.svg';
+import UpIcon from '../assets/images/expand-up.svg';
+import DownIcon from '../assets/images/expand-down.svg';
+import LeftIcon from '../assets/images/expand-left.svg';
+import RightIcon from '../assets/images/expand-right.svg';
 
 export const Images = {
-  PH2Logo,
-  DashboardIcon,
-  ActionIcon,
-  InboxIcon,
-  ReportIcon,
-  SearchIcon,
-  Avatar,
-  Logout,
-  OpenEye,
-  CloseEye,
-  Book,
-  Grade,
-  MessageIcon,
-  MailIcon,
-  BellIcon
+  PH2Logo, DashboardIcon, ActionIcon, InboxIcon, ReportIcon, SearchIcon, Avatar,
+  Logout, OpenEye, CloseEye, Book, Grade, MessageIcon, MailIcon, BellIcon,
+  UpIcon, DownIcon, LeftIcon, RightIcon,
 }

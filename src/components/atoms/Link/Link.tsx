@@ -1,7 +1,7 @@
 import React from 'react';
 // import {Colors} from '../../../configs/colors';
 import {LinkProps} from './Link.props';
-import './Link.styles.css';
+import './Link.styles.scss';
 
 export const Link: React.FC<LinkProps> = ({
   variant,
@@ -9,7 +9,7 @@ export const Link: React.FC<LinkProps> = ({
   url,
 }) => {
     return (
-        <a className={`atom-text ${variant}`} href={url}>
+        <a className={`atom-link ${variant}`} href={url}>
             {children}
         </a>
     );

@@ -3,7 +3,6 @@ export interface LinkProps {
     variant?: string;   
     text?: string;
     url?: string;
-    color?: string;
-    fontSize? :string;
     children?: ReactNode | string;
+    linkIcon?: string;
 }

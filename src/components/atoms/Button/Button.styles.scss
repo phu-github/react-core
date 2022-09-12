@@ -67,11 +67,12 @@
     border-radius: 50%;
 }
 
-/* btn-message */
+/* btn-message , btn-notify */
 .btn-message, .btn-bell-notify{
     border: unset;
 }
-.txt-message{
+.atom-button{
+  .txt-message, .txt-bell-notify{
     position: relative;
     right: 12px;
     top: -12px;
@@ -82,4 +83,20 @@
     background: #f64e60;
     color: #fff;
     font-size: 11px
+  }
+}
+
+/* btn-sidebar */
+.btn-sidebar{
+  width: 228px;
+  height: 43px;
+  background-color: #fff;
+  padding: 10px 16px;
+  margin: 0;
+  .img-dashboard{
+    margin-right: 10px;
+  }
+  .img-arrow{
+    margin-left: auto;
+  }
 }

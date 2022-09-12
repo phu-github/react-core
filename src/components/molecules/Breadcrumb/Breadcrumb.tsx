@@ -8,11 +8,11 @@ export const Breadcrumb: React.FC<BreadcrumbProps> = ({
     navigationLinks,
 }) => {
   return (
-      <div className="breadcrumb">
-        <Text variant={navigationLinks && navigationLinks.length > 0 ? 'has-link': ''} children={'Phriendly Triage Centre'} />
-        {
-          navigationLinks?.map((bread:any) =>  <Link color='#467599' url={bread.href} text={bread.name} />)
-        }
-      </div>
+        <div className="breadcrumb">
+            <Text variant={navigationLinks && navigationLinks.length > 0 ? 'has-link': ''} children={'Phriendly Triage Centre'} />
+                {
+                    navigationLinks?.map((bread:any) =>  <Link url={bread.href} text={bread.name} />)
+                }
+        </div>
   );
 };
