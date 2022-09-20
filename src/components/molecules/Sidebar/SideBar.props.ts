@@ -1,5 +1,5 @@
 export interface SideBarProps {
-  sidebarArr?: Array<Object>;
+  sidebarArr?: Array<any>;
 }
 
 

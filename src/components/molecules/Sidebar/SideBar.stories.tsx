@@ -27,7 +27,7 @@ Primary.args = {
           activeObject: 'null',
           linkIconPlus: Images.RightIcon,
           imgVariantPlus: 'img-arrow',
-          path: '/d-sub1'
+          path: '/d-sub1',
         },
         {
           name: 'Dashboard Sub2',
