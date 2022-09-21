@@ -2,7 +2,8 @@ import React, {FC} from 'react';
 import './App.css';
 import {SideBar} from "./components/molecules/Sidebar";
 import {Images} from "./configs/images";
-
+import './configs/global.scss';
+import BookMark from "./assets/images/bookmark_light.svg";
 
 function App() {
 
@@ -17,7 +18,7 @@ function App() {
       childrens: [
         {
           name: 'Dashboard Sub1',
-          linkIcon: Images.Grade || 'https://picsum.photos/19',
+          linkIcon: Images.BookMark || 'https://picsum.photos/19',
           activeObject: 'null',
           linkIconPlus: Images.RightIcon,
           imgVariantPlus: 'img-arrow',
@@ -25,7 +26,7 @@ function App() {
         },
         {
           name: 'Dashboard Sub2',
-          linkIcon: Images.Grade || 'https://picsum.photos/19',
+          linkIcon: Images.BookMark || 'https://picsum.photos/19',
           activeObject: 'null',
           linkIconPlus: Images.RightIcon,
           imgVariantPlus: 'img-arrow',
@@ -51,7 +52,7 @@ function App() {
       childrens: [
         {
           name: 'Action 1',
-          linkIcon: Images.Grade || 'https://picsum.photos/19',
+          linkIcon: Images.BookMark || 'https://picsum.photos/19',
           activeObject: 'null',
           linkIconPlus: Images.RightIcon,
           imgVariantPlus: 'img-arrow',
@@ -67,7 +68,7 @@ function App() {
           childrens: [
             {
               name: 'action 2.1',
-              linkIcon: Images.Grade || 'https://picsum.photos/19',
+              linkIcon: Images.BookMark || 'https://picsum.photos/19',
               activeObject: 'null',
               linkIconPlus: Images.RightIcon,
               imgVariantPlus: 'img-arrow',
@@ -75,7 +76,7 @@ function App() {
             },
             {
               name: 'action 2.2',
-              linkIcon: Images.Grade || 'https://picsum.photos/19',
+              linkIcon: Images.BookMark || 'https://picsum.photos/19',
               activeObject: 'null',
               linkIconPlus: Images.RightIcon,
               imgVariantPlus: 'img-arrow',

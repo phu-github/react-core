@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './SideBar.styles.scss';
 import { Button } from "../../atoms/Button";
 import { Link } from "../../atoms/Link";
+import { Image } from "../../atoms/Image";
 
 interface SideBarItemProps {
     variant?: string
@@ -21,7 +22,7 @@ export const SideBarItem: React.FC<SideBarItemProps> = ({ variant= 'main' ,sideb
                 ?(
                     <div className='sidebar-item'>
                         <Button
-                            variant='btn-sidebar'
+                            variant='sidebar-btn'
                             isActive={active === sidebarItem}
                             onClick={() =>handleSideBar(sidebarItem)}
                             imgVariant= 'img-left'
@@ -30,12 +31,16 @@ export const SideBarItem: React.FC<SideBarItemProps> = ({ variant= 'main' ,sideb
                             linkIconPlus= {sidebarItem.linkIconPlus  }
                             imgVariantPlus= 'img-arrow'
                         />
-                        {sidebarItem.childrens?.map((sidebarItemSub: any, id: number) =>
+                        {sidebarItem.childrens.map((sidebarItemSub: any, id: number) =>
                             <SideBarItem key={id.toString()} variant={`main-${id}`} sidebarItem = {sidebarItemSub}/>
                         )}
                     </div>
                 )
-                : (<Link variant='sidebar-item' url={sidebarItem.path} children={sidebarItem.name}/>)
+                :( <div className='sidebar-item-link'>
+                        <Image variant='sidebar-img' srcImg={sidebarItem.linkIcon} />
+                        <Link variant='sidebar-link' url={sidebarItem.path} children={sidebarItem.name}/>
+                    </div>
+                )
             }
         </>
     );
