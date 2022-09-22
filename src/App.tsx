@@ -46,7 +46,7 @@ function App() {
       name: 'Actions',
       linkIcon: Images.Book || 'https://picsum.photos/19',
       activeObject: 'null',
-      linkIconPlus: Images.ActionIcon,
+      linkIconPlus: Images.RightIcon,
       imgVariantPlus: 'img-arrow',
       path: '/action',
       childrens: [

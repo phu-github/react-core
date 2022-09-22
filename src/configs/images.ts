@@ -18,9 +18,10 @@ import DownIcon from '../assets/images/expand-down.svg';
 import LeftIcon from '../assets/images/expand-left.svg';
 import RightIcon from '../assets/images/expand-right.svg';
 import BookMark from '../assets/images/bookmark_light.svg'
+import Thunder from '../assets/images/26A1.svg'
 
 export const Images = {
   PH2Logo, DashboardIcon, ActionIcon, InboxIcon, ReportIcon, SearchIcon, Avatar,
   Logout, OpenEye, CloseEye, Book, Grade, MessageIcon, MailIcon, BellIcon,
-  UpIcon, DownIcon, LeftIcon, RightIcon, BookMark
+  UpIcon, DownIcon, LeftIcon, RightIcon, BookMark, Thunder
 }

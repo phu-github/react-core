@@ -5,17 +5,17 @@ import { Link } from "../../atoms/Link";
 import { Image } from "../../atoms/Image";
 
 interface SideBarItemProps {
-    variant?: string
     sidebarItem?: any;
 }
 
-export const SideBarItem: React.FC<SideBarItemProps> = ({ variant= 'main' ,sidebarItem = [] }) => {
+export const SideBarItem: React.FC<SideBarItemProps> = ({ sidebarItem = [] }) => {
 
-    const [active, setActive] = useState(sidebarItem[0]);
+    const [active, setActive] = useState(sidebarItem);
+
     const handleSideBar = (leftNavBtn: any) => {
         setActive(leftNavBtn);
     }
-    console.log("sidebarItem===========",  sidebarItem);
+    console.log("active===========",  sidebarItem);
     return (
         <>
             { sidebarItem.childrens
@@ -25,15 +25,17 @@ export const SideBarItem: React.FC<SideBarItemProps> = ({ variant= 'main' ,sideb
                             variant='sidebar-btn'
                             isActive={active === sidebarItem}
                             onClick={() =>handleSideBar(sidebarItem)}
-                            imgVariant= 'img-left'
+                            imgVariant= 'img-before'
                             title={sidebarItem.name}
                             linkIcon={sidebarItem.linkIcon }
                             linkIconPlus= {sidebarItem.linkIconPlus  }
-                            imgVariantPlus= 'img-arrow'
+                            imgVariantPlus= 'img-after'
                         />
-                        {sidebarItem.childrens.map((sidebarItemSub: any, id: number) =>
-                            <SideBarItem key={id.toString()} variant={`main-${id}`} sidebarItem = {sidebarItemSub}/>
-                        )}
+                        <div className='sidebar-content'>
+                            {sidebarItem.childrens.map((sidebarItemSub: any, id: number) =>
+                                <SideBarItem key={id.toString()} sidebarItem = {sidebarItemSub}/>
+                            )}
+                        </div>
                     </div>
                 )
                 :( <div className='sidebar-item-link'>
