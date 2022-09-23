@@ -10,12 +10,12 @@ interface SideBarItemProps {
 
 export const SideBarItem: React.FC<SideBarItemProps> = ({ sidebarItem = [] }) => {
 
-    const [active, setActive] = useState(sidebarItem);
+    const [active, setActive] = useState('Dashboard');
 
-    const handleSideBar = (leftNavBtn: any) => {
-        setActive(leftNavBtn);
+    const handleSideBar = (name: any) => {
+        setActive(name);
     }
-    console.log("active===========",  sidebarItem);
+    console.log("active===========", active);
     return (
         <>
             { sidebarItem.childrens
@@ -23,8 +23,8 @@ export const SideBarItem: React.FC<SideBarItemProps> = ({ sidebarItem = [] }) =>
                     <div className='sidebar-item'>
                         <Button
                             variant='sidebar-btn'
-                            isActive={active === sidebarItem}
-                            onClick={() =>handleSideBar(sidebarItem)}
+                            isActive={active === sidebarItem.name}
+                            onClick={() =>handleSideBar(sidebarItem.name)}
                             imgVariant= 'img-before'
                             title={sidebarItem.name}
                             linkIcon={sidebarItem.linkIcon }
