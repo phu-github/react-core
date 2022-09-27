@@ -52,6 +52,9 @@
         &:hover{
             background: red;
         }
+        &.active{
+            background: #e8f2ff !important;
+        }
         .sidebar-img{
             margin-right: 10px;
         }
