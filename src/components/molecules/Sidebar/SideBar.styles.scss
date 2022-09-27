@@ -1,3 +1,6 @@
+.atom-image.img-after{
+    margin-left: auto;
+}
 .m-sidebar {
     width: 260px;
     background: #e7eaf3;
@@ -8,11 +11,27 @@
     flex-direction: column;
     align-items: center;
     grid-gap: 2px;
-    > .sidebar-item{
+    .sidebar-item{
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        >.sidebar-btn{
+        &.active{
+            background: #e8f2ff;
+        }
+    }
+    .sidebar-item.link{
+        display: flex;
+        flex-direction: row;
+    }
+    >.sidebar-item{
+        width: 228px;
+        background: #fff;
+        &.link{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        &.link, >.sidebar-btn{
             width: 228px;
             height: 43px;
             border: none;
@@ -20,45 +39,42 @@
             &:hover{
                 background: red;
             }
+        }
+        >.sidebar-btn {
             .img-before{
-                margin-right: 10px;
-            }
-            .img-after{
-                margin-left: auto;
+                margin-right: 5px;
             }
         }
         .sidebar-content{
-            padding-left: 30px;
-            .sidebar-item-link{
+            display: flex;
+            flex-direction: column;
+            padding-left: 27px;
+            .sidebar-item{
                 display: flex;
-                align-items: center;
-                padding: 5px 0px;
+                padding: 0 10px;
                 .sidebar-img{
                     width: 20px;
-                    height: auto;
                     margin-right: 5px;
                 }
+                .sidebar-content{
+                    padding-left: 12px;
+                }
+            }
+            .sidebar-btn{
+                background: transparent;
+                border: none;
+                .img-before{
+                    width: 20px;
+                    margin-right: 5px;
+                }
+                .atom-text{
+                    margin-right: 60px;
+                }
+
             }
         }
     }
-    > .sidebar-item-link{
-        display: flex;
-        align-items: center;
-        width: 228px;
-        height: 43px;
-        background: #fff;
-        border: none;
-        padding: 0 10px;
-        &:hover{
-            background: red;
-        }
-        &.active{
-            background: #e8f2ff !important;
-        }
-        .sidebar-img{
-            margin-right: 10px;
-        }
-    }
+
 }
 
 .m-sidebar.fixed {

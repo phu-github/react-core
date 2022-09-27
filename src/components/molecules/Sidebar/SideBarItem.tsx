@@ -42,7 +42,7 @@ export const SideBarItem: React.FC<SideBarItemProps> = ({
                 </div>
             ) : (
                 <div
-                    className={`sidebar-item-link  ${isActive ? "active" : ""} `}
+                    className={`sidebar-item link ${isActive ?"active":""}`}
                     onClick={() => onChangeActive(sidebarItem.name)}
                 >
                     <Image variant='sidebar-img' srcImg={sidebarItem.linkIcon} />

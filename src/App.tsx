@@ -9,7 +9,7 @@ function App() {
   const sidebarArr = [
     {
       name: 'Dashboard',
-      linkIcon: Images.Grade || 'https://picsum.photos/19',
+      linkIcon: Images.Book || 'https://picsum.photos/19',
       activeObject: false,
       linkIconPlus: Images.RightIcon,
       imgVariantPlus: 'img-arrow',
@@ -59,7 +59,7 @@ function App() {
         },
         {
           name: 'Action 2',
-          linkIcon: Images.Grade || 'https://picsum.photos/19',
+          linkIcon: Images.BookMark || 'https://picsum.photos/19',
           activeObject: false,
           linkIconPlus: Images.RightIcon,
           imgVariantPlus: 'img-arrow',
