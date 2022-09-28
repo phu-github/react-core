@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "./SideBar.styles.scss";
 import { Button } from "../../atoms/Button";
 import { Link } from "../../atoms/Link";
@@ -15,10 +15,13 @@ export const SideBarItem: React.FC<SideBarItemProps> = ({
         isActive,
         onChangeActive,
     }) => {
+
+    const [open, setOpen]  = useState(false)
+
     return (
         <>
             {sidebarItem.childrens ? (
-                <div className='sidebar-item'>
+                <div className={`sidebar-item ${open ?"open":""}`}  onClick={() => setOpen(!open)}>
                     <Button
                         variant='sidebar-btn'
                         isActive={isActive}
