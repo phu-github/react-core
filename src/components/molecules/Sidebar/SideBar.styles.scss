@@ -14,6 +14,23 @@
     .sidebar-item{
         display: flex;
         flex-direction: column;
+        .sidebar-content{
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height ease 0.25s;
+        }
+        &.open{
+            background: #e8f2ff;
+            > .sidebar-btn{
+                .img-after{
+                    transform: rotate(90deg);
+                }
+            }
+            > .sidebar-content{
+                max-height: 500px;
+                transition: max-height 1s ease-in;
+            }
+        }
     }
     .sidebar-item.link{
         display: flex;
@@ -24,22 +41,8 @@
         background: #fff;
         > .sidebar-btn{
             .img-after{
-                transition-duration: .3s;
+                transition-duration: .25s;
                 transition-property: transform;
-            }
-        }
-        .sidebar-content{
-            height: 0;
-        }
-        &.open{
-            background: #e8f2ff;
-            > .sidebar-btn{
-                .img-after{
-                    transform: rotate(90deg);
-                }
-            }
-            .sidebar-content{
-                height: auto;
             }
         }
         &.link{
@@ -66,7 +69,6 @@
             flex-direction: column;
             padding-left: 27px;
             .sidebar-item{
-                display: flex;
                 padding: 0 10px;
                 .sidebar-img{
                     width: 20px;

@@ -21,11 +21,12 @@ export const SideBarItem: React.FC<SideBarItemProps> = ({
     return (
         <>
             {sidebarItem.childrens ? (
-                <div className={`sidebar-item ${open ?"open":""}`}  onClick={() => setOpen(!open)}>
+                <div className={`sidebar-item ${open ?"open":""}`} >
                     <Button
                         variant='sidebar-btn'
                         isActive={isActive}
-                        onClick={() => onChangeActive(sidebarItem.name)}
+                        // onClick={() => onChangeActive(sidebarItem.name)}
+                        onClick={() => setOpen(!open)}
                         imgVariant='img-before'
                         title={sidebarItem.name}
                         linkIcon={sidebarItem.linkIcon}
