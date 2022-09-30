@@ -1,0 +1,42 @@
+@media screen and (max-width: 640px) {
+    .button-section-group.fixed {
+        width: 40px;
+        overflow: hidden;
+    }
+    .right-content {
+        padding-left: 40px;
+        width: calc(100% - 40px)
+    }
+    .statistic-section-group {
+        padding: 16px;
+    }
+    .report-chart-group {
+        padding: 0 40px 24px 24px;
+        width: calc(100% - 48px);
+        flex-wrap: wrap;
+    }
+
+    header .header-title .header-name{
+        display: none;
+    }
+
+    .dashboard-search .search-box{
+        flex-wrap: wrap;
+    }
+
+    .dashboard-search .searchbar {
+        margin-top: 10px!important;
+    }
+
+    .statistic-section-group .statistic-section {
+        min-height: 120px;
+    }
+
+    .statistic-section-group .statistic-section .title {
+        font-size: 14px!important;
+    }
+
+    .report-chart-group .report-chart-wrapper.donut .report-chart{
+        height: 320px!important;
+    }
+}

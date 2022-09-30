@@ -1,0 +1,15 @@
+.search-menu {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding-left: 8px;
+}
+
+.clear-background:hover{
+    background: transparent!important;
+}
+
+.clear-background:hover .text-style{
+    color: black !important;
+}

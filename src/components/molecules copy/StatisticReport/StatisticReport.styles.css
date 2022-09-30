@@ -1,0 +1,12 @@
+.statistic-section {
+    text-align: center;
+}
+
+.statistic-section .title{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 640px) {
+
+}

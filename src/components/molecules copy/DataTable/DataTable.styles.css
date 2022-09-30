@@ -1,0 +1,39 @@
+/*CSS overrides*/
+.rdt_TableRow{
+    height: 60px;
+}
+.rdt_TableCol{
+    font-family: "Montserrat";
+    font-size: 14px;
+    color: #8A8A8A;
+}
+
+.rdt_TableCol_Sortable{
+    flex-direction: row-reverse;
+    justify-content: flex-end !important;
+}
+
+.rdt_TableCol_Sortable .__rdt_custom_sort_icon__{
+    display: flex;
+    flex-direction: column;
+}
+
+.priority-data{
+    display: flex;
+}
+
+.category-data{
+    border-radius: 8px;
+    padding: 6px 10px;
+    align-items: center;
+    color: #fff;
+    font-weight: 700;
+}
+
+.status-data{
+    border-radius: 8px;
+    padding: 6px 10px;
+    align-items: center;
+    color: #011111;
+    font-weight: 700;
+}

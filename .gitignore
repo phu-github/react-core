@@ -30,3 +30,6 @@ yarn-error.log*
 # build directory
 build
 dist
+
+# vscode
+.vscode

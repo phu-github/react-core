@@ -1,0 +1,25 @@
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 0;
+    padding-left: 30px;
+}
+.grid-container .grid-item {
+    margin: 0 10px 0;
+}
+
+textarea {
+    resize: none;
+}
+.grid-item button {
+    justify-content: center;
+}
+
+.action-container button{
+    pointer-events: none;
+}
+
+.summary-reported {
+    display: flex;
+}
+

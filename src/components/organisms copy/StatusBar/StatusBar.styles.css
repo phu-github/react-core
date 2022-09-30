@@ -1,0 +1,13 @@
+.status-bar {
+    display: flex;
+    align-items: center;
+
+}
+
+.status-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+}
+

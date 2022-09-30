@@ -1,0 +1,68 @@
+.button-section-group {
+    z-index: 9999;
+    width: 216px;
+    height: 100%;
+}
+.left-nav.fixed {
+    position: fixed;
+    width: 225px;
+    top: 58px;
+    left: 0;
+    height: 100%;
+    background-color: #FFFFFF;
+    box-shadow: 5px 0 10px -5px #D9D9D9;
+    transition: all 0.5s;
+}
+
+.left-nav.fixed.opened {
+    left: -180px;
+}
+
+.left-nav .arrow-left-nav, .left-nav .arrow-right-nav {
+    position: absolute;
+    top: 18px;
+    right: 8px;
+}
+.left-nav .arrow-right-nav {
+    right: 8px;
+}
+
+.left-nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 8px 16px 16px;
+}
+
+.left-nav-content {
+    padding: 16px;
+    border-top: 1px solid #CCCFCF;
+    border-bottom: 1px solid #CCCFCF;
+
+}
+
+.left-nav-content .text-style {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.right-content   {
+    padding-left: 225px;
+    transition: all 0.5s;
+}
+.right-content-opened .right-content {
+    padding-left: 64px;
+    width: calc(100% - 64px);
+}
+
+.left-nav.fixed.opened .left-nav-content{
+    display: none;
+}
+
+.left-nav.fixed.opened .button-section-group, .left-nav.fixed.opened .left-nav-btn {
+    width: 46px!important;
+    float: right;
+    left: 0px;
+    position: relative;
+    overflow: hidden;
+}

@@ -1,0 +1,11 @@
+.report-chart {
+    display: flex;
+    align-items: center;
+}
+.report-chart > div{
+    width: 100%!important;
+}
+
+.report-chart .apexcharts-canvas, .report-chart .apexcharts-canvas svg{
+    width: 100%!important;
+}
