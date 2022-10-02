@@ -14,4 +14,5 @@ export interface TextareaProps{
     padding?: number | string;
     fontSize?: number | string;
     fontFamily?: string;
+    children?: string
 }

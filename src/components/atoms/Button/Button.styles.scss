@@ -1,18 +1,15 @@
-/* default */
-.atom-button{
+button{
   width: auto;
   height: auto;
   background-color: #fff;
   padding: 0;
   margin: 0;
-  border: 1px solid black;
+  border: none;
   border-radius: unset;
   cursor: pointer;
   display: flex;
   align-items: center;
 }
-/* end default */
-
 /* btn icon text */
 .btn-icon-text {
     width: 232px;
@@ -68,7 +65,7 @@
 .btn-message, .btn-bell-notify{
     border: unset;
 }
-.atom-button{
+button{
   .txt-message, .txt-bell-notify{
     position: relative;
     right: 12px;
@@ -83,17 +80,26 @@
   }
 }
 
-/* btn-sidebar */
-.btn-sidebar{
-  width: 228px;
-  height: 43px;
-  background-color: #fff;
-  padding: 10px 16px;
-  margin: 0;
-  .img-dashboard{
-    margin-right: 10px;
+//btn-logo
+.btn-logo{
+  display: flex;
+  align-items: center;
+  .img-logo{
+    width: 24px;
+    height: 24px;
   }
-  .img-arrow{
-    margin-left: auto;
+  .txt-logo{
+    font-size: 16px;
+    font-weight: 700;
+    color: #333333;
+  }
+}
+// btn-menu
+.btn-menu{
+  border: 2px solid #d2d4d7;
+  border-radius: 50%;
+  outline: none;
+  &:hover{
+    border: 2px solid #9d9fa0;
   }
 }

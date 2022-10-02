@@ -1,9 +1,10 @@
 import React, {FC} from 'react';
-import './App.css';
+import './App.scss';
 import {SideBar} from "./components/molecules/Sidebar";
 import {Images} from "./configs/images";
+import './configs/reset.css';
 import './configs/global.scss';
-
+import {Outlet} from "react-router-dom";
 function App() {
 
   const sidebarArr = [
@@ -21,7 +22,7 @@ function App() {
           activeObject: false,
           linkIconPlus: Images.RightIcon,
           imgVariantPlus: 'img-arrow',
-          path: '/d-sub1'
+          path: '/dashboard'
         },
         {
           name: 'Dashboard Sub2',
@@ -29,7 +30,7 @@ function App() {
           activeObject: false,
           linkIconPlus: Images.RightIcon,
           imgVariantPlus: 'img-arrow',
-          path: '/d-sub2'
+          path: '/dashboard'
         },
       ]
     },
@@ -79,7 +80,7 @@ function App() {
               activeObject: false,
               linkIconPlus: Images.RightIcon,
               imgVariantPlus: 'img-arrow',
-              path: '/d-sub2'
+              path: '/d-sub2',
             },
           ]
         },
@@ -92,11 +93,21 @@ function App() {
       linkIconPlus: Images.ReportIcon,
       imgVariantPlus: 'img-arrow',
       path: '/reports',
-    }
+    },
+    {
+      name: 'Reports',
+      linkIcon: Images.Settings || 'https://picsum.photos/19',
+      activeObject: false,
+      linkIconPlus: Images.ReportIcon,
+      imgVariantPlus: 'img-arrow',
+      path: '/setting',
+    },
+
   ];
   return (
     <div className="App">
-      <SideBar sidebarArr={sidebarArr} />
+        <SideBar sidebarArr={sidebarArr} />
+        <Outlet/>
     </div>
   );
 }

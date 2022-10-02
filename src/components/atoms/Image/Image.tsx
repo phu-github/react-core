@@ -9,7 +9,7 @@ export const Image: React.FC<ImageProps> = ({
 }) => {
   return (
     <img
-        className={`atom-image ${variant}`} src={srcImg} onClick={onClick}
+        className={`${variant}`} src={srcImg} onClick={onClick}
     />
   );
 };

@@ -1,0 +1,9 @@
+.App {
+  display: flex;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}

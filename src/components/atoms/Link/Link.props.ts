@@ -4,5 +4,5 @@ export interface LinkProps {
     text?: string;
     url?: string;
     children?: ReactNode | string;
-    linkIcon?: string;
+    to?: string;
 }
