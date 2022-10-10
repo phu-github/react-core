@@ -1,3 +1,11 @@
-.o-navgroup{
-
+.o-nav-group{
+  width: 260px;
+  background: white;
+  padding: 0;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-gap: 2px;
 }

@@ -4,7 +4,7 @@ import { Brand } from '.';
 import { Images } from "../../../configs/images";
 
 export default {
-    title: 'Molecules/Nav/Brand',
+    title: 'Molecules/Nav',
     component: Brand,
 } as ComponentMeta<typeof Brand>;
 

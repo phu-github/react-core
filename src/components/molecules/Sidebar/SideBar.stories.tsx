@@ -4,14 +4,14 @@ import {SideBar} from '.';
 import {Images} from "../../../configs/images";
 
 export default {
-  title: 'Molecules/Content/SideBar',
+  title: 'Molecules/Nav',
   component: SideBar,
 } as ComponentMeta<typeof SideBar>;
 
 const Template: ComponentStory<typeof SideBar> = (args) => <SideBar {...args} />;
 
-export const Primary = Template.bind({});
-Primary.args = {
+export const sidebar = Template.bind({});
+sidebar.args = {
   mVariant: 'm-sidebar',
   sidebarArr : [
     {
@@ -100,7 +100,8 @@ Primary.args = {
       imgVariantPlus: 'img-arrow',
       path: '/reports',
     }
-  ]
+  ],
+  isLink: false
 };
 
 

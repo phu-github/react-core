@@ -10,7 +10,7 @@ export default {
 
 const Template: ComponentStory<typeof NavGroup> = (args) => <NavGroup {...args} />;
 
-export const Navigation = Template.bind({});
-Navigation.args = {
+export const navgroup = Template.bind({});
+navgroup.args = {
 
 };

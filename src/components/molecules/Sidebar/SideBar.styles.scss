@@ -2,15 +2,6 @@ img.img-after{
     margin-left: auto;
 }
 .m-sidebar {
-    width: 260px;
-    background: #e7eaf3;
-    padding: 0;
-    position: relative;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    grid-gap: 2px;
     .logo{
         width: 28px;
         height: 28px;
@@ -63,7 +54,7 @@ img.img-after{
             border: none;
             padding: 0 10px;
             &:hover{
-                background: red;
+                background: #DFF4ED;
             }
         }
         >.sidebar-btn {

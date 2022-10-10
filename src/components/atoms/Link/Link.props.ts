@@ -5,4 +5,5 @@ export interface LinkProps {
     url?: string;
     children?: ReactNode | string;
     to?: string;
+    isLink?: boolean;
 }

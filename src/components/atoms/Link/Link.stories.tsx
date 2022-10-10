@@ -17,7 +17,8 @@ export const Default = Template.bind({});
 Default.args = {
     variant: 'link-email',
     children: 'darlene.robertson@gmail.com',
-    url: 'http://www.google.com'
+    url: 'http://www.google.com',
+    isLink: false
 };
 
 export const Custom = Template.bind({});
@@ -25,4 +26,5 @@ Custom.args = {
     variant: 'link-number',
     children: '+61 412 345 678',
     url: 'http://www.google.com',
+    isLink: false
 };

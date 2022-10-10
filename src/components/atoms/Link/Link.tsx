@@ -7,10 +7,19 @@ export const Link: React.FC<LinkProps> = ({
   variant,
   children,
   url="/home",
+  isLink = false
 }) => {
-    return (
-        <LinkItem className={`atom-link ${variant}`} to ={url}>
-            {children}
-        </LinkItem>
-    );
+
+    if(isLink)
+        return (
+            <LinkItem className={`atom-link ${variant}`} to ={url}>
+                {children}
+            </LinkItem>
+        );
+    else
+        return (
+            <a className={`atom-link ${variant}`} href ={url}>
+                {children}
+            </a>
+        );
 };
