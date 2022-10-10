@@ -101,7 +101,6 @@ sidebar.args = {
       path: '/reports',
     }
   ],
-  isLink: false
 };
 
 

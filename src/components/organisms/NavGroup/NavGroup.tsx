@@ -8,7 +8,7 @@ import {Images} from "../../../configs/images";
 
 
 export const NavGroup: React.FC<NavGroupProps> = ({
-
+    oIsLink= true
 }) => {
 
     const sidebarArr = [
@@ -113,7 +113,7 @@ export const NavGroup: React.FC<NavGroupProps> = ({
         <div className="o-nav-group">
             <Brand mVariant='m-brand'/>
             <SearchBar mVariant="m-search-bar" mLinkIcon={Images.SearchIcon}/>
-            <SideBar mVariant='m-sidebar' sidebarArr={sidebarArr} />
+            <SideBar mVariant='m-sidebar' sidebarArr={sidebarArr} isLink={oIsLink} />
         </div>
     );
 };
