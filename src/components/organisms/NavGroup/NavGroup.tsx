@@ -99,7 +99,7 @@ export const NavGroup: React.FC<NavGroupProps> = ({
             path: '/reports',
         },
         {
-            name: 'Reports',
+            name: 'Settings',
             linkIcon: Images.Settings || 'https://picsum.photos/19',
             activeObject: false,
             linkIconPlus: Images.ReportIcon,
