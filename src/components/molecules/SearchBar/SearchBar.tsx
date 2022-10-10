@@ -5,10 +5,11 @@ import { Input } from '../../atoms/Input';
 import { Button } from '../../atoms/Button';
 
 export const SearchBar: React.FC<SearchBarProps> = ({
+    mVariant,
     mLinkIcon,
 }) => {
   return (
-    <div className="m-search-bar">
+    <div className={`${mVariant}`}>
         <Input variant='input-search' backgroundColor='transparent' border='none' />
         <Button 
             variant = "btn-search"

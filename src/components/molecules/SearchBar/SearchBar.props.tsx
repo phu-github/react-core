@@ -1,3 +1,4 @@
 export interface SearchBarProps{
-    mLinkIcon?: string
+    mVariant?: string;
+    mLinkIcon?: string;
 }

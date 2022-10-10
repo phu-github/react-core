@@ -3,10 +3,10 @@ import { SideBarProps } from "./SideBar.props";
 import "./SideBar.styles.scss";
 import { SideBarItem } from "./SideBarItem";
 
-export const SideBar: React.FC<SideBarProps> = ({ sidebarArr = [] }) => {
+export const SideBar: React.FC<SideBarProps> = ({ sidebarArr = [], mVariant }) => {
     const [active, setActive] = useState("");
     return (
-        <div className='m-sidebar'>
+        <div className={`${mVariant}`}>
             {sidebarArr?.map((sidebarItem: any, index) => (
                 <SideBarItem
                     isActive={active === sidebarItem.name}

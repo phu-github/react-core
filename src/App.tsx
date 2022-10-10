@@ -5,6 +5,8 @@ import {Images} from "./configs/images";
 import './configs/reset.css';
 import './configs/global.scss';
 import {Outlet} from "react-router-dom";
+import { Brand } from './components/molecules/Brand';
+import { SearchBar } from './components/molecules/SearchBar';
 function App() {
 
   const sidebarArr = [
@@ -106,8 +108,12 @@ function App() {
   ];
   return (
     <div className="App">
-        <SideBar sidebarArr={sidebarArr} />
-        <Outlet/>
+		<div>
+			<Brand mVariant='m-brand' />
+			<SearchBar mVariant="m-search-bar" mLinkIcon={Images.SearchIcon}/>
+			<SideBar mVariant='m-sidebar' sidebarArr={sidebarArr} />
+		</div>
+		<Outlet/>
     </div>
   );
 }

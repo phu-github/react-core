@@ -12,5 +12,5 @@ const Template: ComponentStory<typeof Brand> = (args) => <Brand {...args} />;
 
 export const Brandstorybook = Template.bind({});
 Brandstorybook.args = {
-    mLinkIcon: Images.SearchIcon
+    mVariant: 'm-brand',
 };

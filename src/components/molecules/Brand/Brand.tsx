@@ -6,10 +6,10 @@ import { Button } from '../../atoms/Button';
 import {Images} from "../../../configs/images";
 
 export const Brand: React.FC<BrandProps> = ({
-
+  mVariant
 }) => {
   return (
-    <div className="m-brand">
+    <div className={`${mVariant}`}>
         <Button
             variant='btn-logo'
             imgVariant='img-logo'

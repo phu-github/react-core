@@ -12,6 +12,7 @@ const Template: ComponentStory<typeof SideBar> = (args) => <SideBar {...args} />
 
 export const Primary = Template.bind({});
 Primary.args = {
+  mVariant: 'm-sidebar',
   sidebarArr : [
     {
       name: 'Dashboard',

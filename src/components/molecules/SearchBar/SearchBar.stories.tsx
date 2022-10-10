@@ -12,5 +12,6 @@ const Template: ComponentStory<typeof SearchBar> = (args) => <SearchBar {...args
 
 export const MenuSearchBar = Template.bind({});
 MenuSearchBar.args = {
+    mVariant: 'm-search-bar',
     mLinkIcon: Images.SearchIcon
 };

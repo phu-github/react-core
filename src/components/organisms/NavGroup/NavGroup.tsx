@@ -11,7 +11,6 @@ export const NavGroup: React.FC<NavGroupProps> = ({
   return (
     <div className="o-navgroup">
         <Brand/>
-        {/*<SideBar sidebarArr={sidebarArr} />*/}
     </div>
   );
 };
