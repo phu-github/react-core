@@ -20,7 +20,7 @@ export const Input: React.FC<InputProps> = ({
 }) => {
   return (
     <input 
-        className={`atom-input ${variant}`}
+        className={`${variant}`}
         type={type} 
         placeholder={placeholder} 
         name={name} 
