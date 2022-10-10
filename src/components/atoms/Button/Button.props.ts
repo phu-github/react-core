@@ -2,7 +2,7 @@ import {ReactNode} from 'react';
 
 export interface ButtonProps {
     variant?: string;
-    isActive?: boolean
+    isActive?: boolean;
     title?: string;
     onClick?: () => void;
     // text
