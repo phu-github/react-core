@@ -1,5 +1,8 @@
 .App {
   display: flex;
+  .page-container{
+    width: 100%;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {

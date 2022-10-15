@@ -1,7 +1,6 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { Brand } from '.';
-import { Images } from "../../../configs/images";
 
 export default {
     title: 'Molecules/Nav',

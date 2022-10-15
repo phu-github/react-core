@@ -1,7 +1,7 @@
 button{
-  width: auto;
-  height: auto;
-  background-color: #fff;
+  width: fit-content;
+  height: fit-content;
+  background-color: transparent;
   padding: 0;
   margin: 0;
   border: none;
@@ -9,6 +9,7 @@ button{
   cursor: pointer;
   display: flex;
   align-items: center;
+  position: relative;
 }
 /* btn icon text */
 .btn-icon-text {
@@ -67,8 +68,8 @@ button{
 }
 button{
   .txt-message, .txt-bell-notify{
-    position: relative;
-    right: 12px;
+    position: absolute;
+    right: -12px;
     top: -12px;
     line-height: 24px;
     border-radius: 50%;

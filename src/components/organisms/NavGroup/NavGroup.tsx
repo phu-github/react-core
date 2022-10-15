@@ -112,7 +112,6 @@ export const NavGroup: React.FC<NavGroupProps> = ({
     return (
         <div className="o-nav-group">
             <Brand mVariant='m-brand'/>
-            <SearchBar mVariant="m-search-bar" mLinkIcon={Images.SearchIcon}/>
             <SideBar mVariant='m-sidebar' sidebarArr={sidebarArr} isLink={oIsLink} />
         </div>
     );

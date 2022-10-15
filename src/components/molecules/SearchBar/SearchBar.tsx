@@ -1,6 +1,6 @@
 import React from 'react';
 import {SearchBarProps} from './SearchBar.props';
-import './SearchBar.styles.css';
+import './SearchBar.styles.scss';
 import { Input } from '../../atoms/Input'; 
 import { Button } from '../../atoms/Button';
 
