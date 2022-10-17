@@ -8,15 +8,15 @@ import {Header} from "./components/organisms/Header";
 
 function App() {
 
-  return (
-    <div className="App">
-		<NavGroup />
-		<div className='page-container'>
-            <Header mVariant='o-header'/>
-            <Outlet/>
+    return (
+        <div className="App">
+            <NavGroup/>
+            <div className='page-container'>
+                <Header/>
+                <Outlet/>
+            </div>
         </div>
-    </div>
-  );
+    );
 }
 
 export default App;
