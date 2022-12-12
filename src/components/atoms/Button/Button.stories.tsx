@@ -78,7 +78,6 @@ NotificationBox.args = {
   imgVariant: 'img-bell-notify',
 };
 
-<<<<<<< HEAD
 export const MutiLanguage = Template.bind({});
 MutiLanguage.args = {
   variant: 'btn-language',
@@ -86,7 +85,8 @@ MutiLanguage.args = {
   title: "",
   onClick: action('on-click'),
   imgVariant: ''
-=======
+}
+
 export const Logo = Template.bind({});
 Logo.args = {
   variant: 'btn-logo',
@@ -106,5 +106,4 @@ Menu.args = {
   linkIcon: Images.Menu,
   onClick: action('on-click'),
   imgVariant: 'img-menu'
->>>>>>> main
 };
