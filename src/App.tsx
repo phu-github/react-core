@@ -5,6 +5,7 @@ import './configs/global.scss';
 import {Outlet} from "react-router-dom";
 import {NavGroup} from "./components/organisms/NavGroup";
 import {Header} from "./components/organisms/Header";
+import './i18n/i18n';
 
 function App() {
 

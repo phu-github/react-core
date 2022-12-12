@@ -33,3 +33,7 @@ dist
 
 # vscode
 .vscode
+
+# Firebase Hosting
+.firebaserc
+firebase-debug.log

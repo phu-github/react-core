@@ -7,7 +7,7 @@ export const Link: React.FC<LinkProps> = ({
   variant,
   children,
   url="/home",
-  isLink = false
+  isLink = true
 }) => {
 
     if(isLink)

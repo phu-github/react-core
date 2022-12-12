@@ -2,6 +2,7 @@ img.img-after{
     margin-left: auto;
 }
 .m-sidebar {
+    overflow-y: scroll;
     .logo{
         width: 28px;
         height: 28px;
@@ -22,7 +23,7 @@ img.img-after{
                 }
             }
             > .sidebar-content{
-                max-height: 500px;
+                max-height: 680px;
                 transition: max-height 1s ease-in;
             }
         }
@@ -32,9 +33,13 @@ img.img-after{
         flex-direction: row;
     }
     >.sidebar-item{
-        width: 228px;
+        width: 260px;
         background: #fff;
         > .sidebar-btn{
+            p{
+                font-size: 14px;
+                font-weight: 700;
+            }
             .img-after{
                 transition-duration: .25s;
                 transition-property: transform;
@@ -44,12 +49,16 @@ img.img-after{
             display: flex;
             flex-direction: row;
             align-items: center;
+            .sidebar-link{
+                font-size: 14px;
+                font-weight: 700;
+            }
             .img-before,.sidebar-img{
                 margin-right: 5px;
             }
         }
         &.link, >.sidebar-btn{
-            width: 228px;
+            width: 260px;
             height: 43px;
             border: none;
             padding: 0 10px;
@@ -67,9 +76,9 @@ img.img-after{
             flex-direction: column;
             padding-left: 27px;
             .sidebar-item{
-                padding: 0 10px;
+                padding: 15px 0px 0px 0px;
                 .sidebar-img{
-                    width: 20px;
+                    width: 10px;
                     margin-right: 5px;
                 }
                 .sidebar-content{
@@ -80,8 +89,12 @@ img.img-after{
                 background: transparent;
                 border: none;
                 .img-before{
-                    width: 20px;
+                    width: 10px;
                     margin-right: 5px;
+                }
+                p{
+                    font-size: 15px;
+                    font-weight: 300;
                 }
                 .atom-text{
                     margin-right: 60px;
@@ -98,5 +111,3 @@ img.img-after{
     width: 280px;
     left: 0;
 }
-
-
