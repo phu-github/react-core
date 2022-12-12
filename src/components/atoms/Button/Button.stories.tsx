@@ -77,3 +77,12 @@ NotificationBox.args = {
   txtVariant: 'txt-bell-notify',
   imgVariant: 'img-bell-notify',
 };
+
+export const MutiLanguage = Template.bind({});
+MutiLanguage.args = {
+  variant: 'btn-language',
+  linkIcon: Images.VnFlag,
+  title: "",
+  onClick: action('on-click'),
+  imgVariant: ''
+};
