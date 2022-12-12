@@ -8,12 +8,14 @@ interface SideBarItemProps {
     sidebarItem?: any;
     isActive: boolean;
     onChangeActive: (navItem: string) => void;
+    isLink?: boolean;
 }
 
 export const SideBarItem: React.FC<SideBarItemProps> = ({
         sidebarItem = [],
         isActive,
         onChangeActive,
+        isLink
     }) => {
 
     const [open, setOpen]  = useState(false)
@@ -51,9 +53,10 @@ export const SideBarItem: React.FC<SideBarItemProps> = ({
                 >
                     <Image variant='sidebar-img' srcImg={sidebarItem.linkIcon} />
                     <Link
-                        variant='sidebar-link'
-                        url={sidebarItem.path}
-                        children={sidebarItem.name}
+                        variant = 'sidebar-link'
+                        url = {sidebarItem.path}
+                        children = {sidebarItem.name}
+                        isLink = {isLink}
                     />
                 </div>
             )}

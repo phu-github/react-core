@@ -1,0 +1,12 @@
+.App {
+  display: flex;
+  .page-container{
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}

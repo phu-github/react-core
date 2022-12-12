@@ -1,0 +1,25 @@
+{
+  "PH2Authorize": {
+    "clientId": "I6DljC3sl4EAMKOL0krFyNlYnDFQzcJFlaCNKcDrK1U",
+    "oauth": "https://s9.stg.phriendlyphishing.com/oauth/authorize"
+  },
+  "Services": {
+    "inboxes": "/inboxes"
+  },
+  "JWT_SECRET": "Q5Oya9gcN3A8Vrm246oDCgpMxlxbDxY0i3zmB7+z0a8Dsk6HeKWryHmHZS1bp2mJZMTJe79zWDpIT4tRM3KcELwxkb6fYhSS6k59/htUO1yRsNR3shNmSyLSeBLQ3ofX82Z6sMVdIBLglstABSAa/XhMDT1qxq4r6G+d8ezpbua3XKVx/6lbokDEiQgFgV2Xyla5m7hl0cD4Gdsb17hnobzFw+Ak3DT5CnNOclcNIvpp9p6Xt+bNtQTdKp9dDJU6OD0+f9e5tJhB27zYHW51tYb/UW1Lkl/RwXVeYt/n79A5lA//z8vtIG/DUjETV8YbJaDzVjc6+JYyLf7vWQZClA==",
+  "AWS": {
+    "config": {
+      "region": "us-east-1",
+      "loginUrl": "s9.stg.phriendlyphishing.com",
+      "poolId": "us-east-1:4323adf7-66a0-4dfb-873f-cbeca97def3b",
+      "tableName": "staging_triage_inboxes"
+    }
+  },
+  "JWTKEY": "Q5Oya9gcN3A8Vrm246oDCgpMxlxbDxY0i3zmB7+z0a8Dsk6HeKWryHmHZS1bp2mJZMTJe79zWDpIT4tRM3KcELwxkb6fYhSS6k59/htUO1yRsNR3shNmSyLSeBLQ3ofX82Z6sMVdIBLglstABSAa/XhMDT1qxq4r6G+d8ezpbua3XKVx/6lbokDEiQgFgV2Xyla5m7hl0cD4Gdsb17hnobzFw+Ak3DT5CnNOclcNIvpp9p6Xt+bNtQTdKp9dDJU6OD0+f9e5tJhB27zYHW51tYb/UW1Lkl/RwXVeYt/n79A5lA//z8vtIG/DUjETV8YbJaDzVjc6+JYyLf7vWQZClA==",
+  "Build":{
+    "version": "__build_version__"
+  },
+  "Google": {
+    "apiKey": ""
+  }
+}

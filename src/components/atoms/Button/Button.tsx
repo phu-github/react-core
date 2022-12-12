@@ -17,7 +17,7 @@ export const Button: React.FC<ButtonProps> = ({
 }) => {
 
     return (
-        <button className={`atom-button ${variant} ${isActive? 'active' : ''}`} onClick={onClick} >
+        <button className={`${variant} ${isActive? 'active' : ''}`} onClick={onClick} >
             {linkIcon && <Image variant={imgVariant} srcImg={linkIcon} />}
             {title && <Text variant={txtVariant} children={title} />}
             {linkIconPlus && <Image variant={imgVariantPlus} srcImg={linkIconPlus} />}

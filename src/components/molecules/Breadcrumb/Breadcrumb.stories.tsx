@@ -4,7 +4,7 @@ import {Breadcrumb} from '.';
 import {Images} from "../../../configs/images";
 
 export default {
-  title: 'Molecules/Content/Breadcrumb',
+  title: 'Molecules/Breadcrumb',
   component: Breadcrumb,
 } as ComponentMeta<typeof Breadcrumb>;
 

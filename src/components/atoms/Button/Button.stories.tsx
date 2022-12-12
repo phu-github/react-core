@@ -40,7 +40,7 @@ _3IconWITHTextANDIcon.args = {
   title: "Dashboard",
   onClick: action('on-click'),
   // Text
-  txtVariant: 'txt-xxx',
+  txtVariant: '',
   //image 1
   linkIcon: Images.DashboardIcon,
   imgVariant: 'img-dashboard',
@@ -78,6 +78,7 @@ NotificationBox.args = {
   imgVariant: 'img-bell-notify',
 };
 
+<<<<<<< HEAD
 export const MutiLanguage = Template.bind({});
 MutiLanguage.args = {
   variant: 'btn-language',
@@ -85,4 +86,25 @@ MutiLanguage.args = {
   title: "",
   onClick: action('on-click'),
   imgVariant: ''
+=======
+export const Logo = Template.bind({});
+Logo.args = {
+  variant: 'btn-logo',
+
+  linkIcon: Images.Logo,
+  imgVariant: 'img-logo',
+
+  title: "Storybook",
+  txtVariant: 'txt-logo',
+
+  onClick: action('on-click'),
+};
+
+export const Menu = Template.bind({});
+Menu.args = {
+  variant: 'btn-menu',
+  linkIcon: Images.Menu,
+  onClick: action('on-click'),
+  imgVariant: 'img-menu'
+>>>>>>> main
 };
